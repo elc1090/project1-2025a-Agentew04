@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.center {
+    text-align: center;
+    justify-content: center;
+}
+
+.horizontalpai {
+    display: flex;
+    
+    flex-direction: row;
+}
+
+.horizontalfilho {
+    flex: auto;
+}
+
+.title {
+    margin: 0;
+    padding: 0;
+}
+
+.vertical-center {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.botaotitlebar {
+    border-radius: 15px;
+    margin: 5px;
+    background-color: cornflowerblue;
+}
+
+.botaotitlebar:hover {
+    background-color: dodgerblue;
+}
+
+.full-width-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.botaobola {
+    margin: 15px;
+    border-radius: 100%;
+    border-width: 2px;
+    border-color: gray;
+}
+
+.botaohover {
+    margin: 5px;
+    background-color: blue;
+    transition: ease-in-out 100ms;
+    transform: scale(1);
+    transition-duration: 100ms;
+    width: 100px;
+    height: 100px;
+}
+
+.botaohover:hover{
+    transition: ease-in-out 100ms;
+    transform: scale(1.1);
+    transition-duration: 100ms;
+}
