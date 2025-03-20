@@ -16,10 +16,10 @@ Acesso: Substitua este texto pela URL para acesso ao site publicado
 
 
 #### Desenvolvedor(a)
-Substitua este texto pela sua identificação: nome e curso
+Rodrigo Appelt - Ciência da Computação - UFSM
 
 #### Cliente
-Substitua este texto pela identificação do cliente
+Lorenzo Taschetto
 
 
 
