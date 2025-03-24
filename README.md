@@ -16,7 +16,7 @@ Acesso: Substitua este texto pela URL para acesso ao site publicado
 
 
 #### Desenvolvedor(a)
-Rodrigo Appelt - Ciência da Computação - UFSM
+Rodrigo Appelt, Ciência da Computação
 
 #### Cliente
 Lorenzo Taschetto
@@ -27,13 +27,13 @@ Lorenzo Taschetto
 #### Site/app original
 
 ##### Link
-Substitua este texto pela URL do site/app escolhido
+[https://www.gsuplementos.com.br/](https://www.gsuplementos.com.br/)
 
 ##### Descrição
 Substitua este texto por uma descrição do site/app escolhido. Inclua observações sobre seu conteúdo, aparência e código.
 
 #### Demanda do(a) cliente
-Substitua este texto pela demanda do(a) cliente
+> Barra de navegação, Página de produtos, Destaques na home ( promoções, lançamentos, etc)
 
 #### Desenvolvimento
 
