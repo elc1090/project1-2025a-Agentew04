@@ -26,6 +26,21 @@ body {
     padding: 0;
 }
 
+.navbar-fake {
+    margin: 20px;
+}
+
+.navbar-item {
+    text-decoration: none;
+    font-weight: regular;
+    transition: text-decoration 0.3s ease, font-weight 0.3s ease;
+}
+
+.navbar-item:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
 .vertical-center {
     justify-content: center;
     align-items: center;
@@ -308,10 +323,11 @@ body {
 }
 
 .maisvendidos-details {
-    list-style-type: disc;
+    list-style-type: circle;
     padding-left: 20px;
     margin: 10px 0;
     font-size: 14px;
+    text-align: leftja ;
 }
 
 .maisvendidos-buy-button {
