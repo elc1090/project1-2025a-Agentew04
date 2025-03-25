@@ -1,0 +1,24 @@
+.foreground-white {
+    color: white;
+}
+
+.background-darkblue {
+    background-color: #1d5e90;
+}
+
+.background-blue {
+    background-color: #1899d5;
+}
+
+.background-green {
+    background-color: #39b438;
+}
+
+.background-darkgreen {
+    background-color: #258f25;
+}
+
+/* para debuggar */
+.red {
+    background-color: red;
+}

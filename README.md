@@ -43,14 +43,14 @@ Substitua este texto por uma descrição do processo de desenvolvimento, explica
 #### Tecnologias
 
 Substitua este trecho por uma lista detalhada de tecnologias usadas (tanto as básicas, como HTML e CSS, como as mais específicas, por exemplo Tailwind, etc.):
-- ...
-- ...
-- 
+- HTML
+- CSS
+- JS
 
 #### Ambiente de desenvolvimento
 
 Substitua este trecho por uma lista detalhada dos ambientes/ferramentas de desenvolvimento que você usou (por exemplo, VS Code + alguma extensão, etc.)
-- ...
+- Visual Studio Code
 - ...
 
 #### Referências e créditos

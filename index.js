@@ -1,27 +1,73 @@
-const adCarrosel = {
+function startCarrossel(carrossel){
+    setInterval(() => {
+        const imageElement = document.getElementById(carrossel.id);
+        if (imageElement) {
+            carrossel.current = (carrossel.current + 1) % carrossel.imagens.length;
+            imageElement.src = carrossel.imagens[carrossel.current];
+        }
+    }, carrossel.timer * 1000);
+}
+
+function setupButtonGroup(buttonGroup){
+    let btn = document.getElementById(buttonGroup.ids[buttonGroup.current]);
+    btn.classList.add("active");
+    buttonGroup.ids.forEach((buttonId) => {
+        const button = document.getElementById(buttonId);
+        button.addEventListener("click", () => {
+            btn.classList.remove("active");
+            btn = button;
+            btn.classList.add("active");
+
+            // atualizar links
+            buttonGroup.links.forEach((link) => {
+                if(!link.id){
+                    return;
+                }
+                const element = document.getElementById(link.id);
+                if (element) {
+                    if (link.type === "img") {
+                        element.src = link.value[buttonId];
+                    } else {
+                        element.innerText = link.value[buttonId];
+                    }
+                }
+            });
+        });
+    });
+    // da trigger no primeiro update
+    let firstButtonId = buttonGroup.ids[buttonGroup.current];
+    buttonGroup.links.forEach((link) => {
+        if(!link.id){
+            return;
+        }
+        const element = document.getElementById(link.id);
+        if (element) {
+            if (link.type === "img") {
+                element.src = link.value[firstButtonId];
+            } else {
+                element.innerText = link.value[firstButtonId];
+            }
+        }
+    });
+}
+
+const adCarrossel = {
     imagens: [
-        "ad1.webp",
-        "ad2.webp",
-        "ad3.webp",
-        "ad4.webp",
-        "ad5.webp",
-        "ad6.webp",
-        "ad7.webp",
-        "ad8.webp",
-        "ad9.webp",
+        "img/ad1.webp",
+        "img/ad2.webp",
+        "img/ad3.webp",
+        "img/ad4.webp",
+        "img/ad5.webp",
+        "img/ad6.webp",
+        "img/ad7.webp",
+        "img/ad8.webp",
+        "img/ad9.webp",
     ],
-    id: "carrosel1",
+    id: "carrossel1",
     timer: 3,
     current: 0
 }
 
-setInterval(() => {
-    const imageElement = document.getElementById(adCarrosel.id);
-    if (imageElement) {
-        adCarrosel.current = (adCarrosel.current + 1) % adCarrosel.imagens.length;
-        imageElement.src = `img/${adCarrosel.imagens[adCarrosel.current]}`;
-    }
-}, adCarrosel.timer * 1000);
 
-
-
+startCarrossel(adCarrossel);
+setupButtonGroup(btnGroupSuplementos);

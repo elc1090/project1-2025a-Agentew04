@@ -1,0 +1,120 @@
+.flex {
+    display: flex;
+}
+
+.halign-center {
+    text-align: center;
+    justify-content: center;
+}
+
+.halign-left {
+    text-align: left;
+    justify-content: left;
+}
+
+.halign-right {
+    text-align: right;
+    justify-content: right;
+}
+
+.halign-stretch {
+    text-align: stretch;
+    justify-content: stretch;
+    width: 100%;
+    flex-grow: 100%;
+}
+
+.valign-center {
+    align-items: center;
+}
+
+.valign-top {
+    align-items: top;
+}
+
+.valign-bottom {
+    align-items: bottom;
+}
+
+.valign-stretch {
+    align-items: stretch;
+}
+
+.content-horizontal {
+    display: flex;
+    flex-direction: row;
+}
+
+/*
+Grid
+*/
+
+.grid {
+    display: grid;
+}
+
+.grid-header {
+    grid-template-columns: auto 1fr auto auto auto auto;
+}
+
+.grid-item-1 {
+    grid-column: 1;
+}
+
+.grid-item-2 {
+    grid-column: 2;
+}
+
+.grid-item-3 {
+    grid-column: 3;
+}
+
+.grid-item-4 {
+    grid-column: 4;
+}
+
+.grid-item-5 {
+    grid-column: 5;
+}
+
+.grid-item-6 {
+    grid-column: 6;
+}
+
+.grid-1 {
+    grid-template-columns: 1fr;
+}
+
+.grid-2 {
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-3 {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/*
+paddings
+*/
+
+.padding-15 {
+    padding: 15px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: white; /* Adjust as needed */
+    border-radius: 5px; /* Optional for rounded corners */
+    width: 100%;
+    margin: 15px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional for shadow */
+}
+
+.search-bar p {
+    margin: 0;
+    font-size: 14px; /* Adjust font size as needed */
+    color: #333; /* Adjust text color as needed */
+}
