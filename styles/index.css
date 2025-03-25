@@ -158,6 +158,7 @@ body {
 .product-card-ad img {
     max-width: 100%;
     border-radius: 5px;
+    width: 400px;
 }
 
 .product-card h3 {
@@ -205,4 +206,132 @@ body {
 
 .suplementos-container {
     padding: 20px;
+}
+
+.maisvendidos-pai {
+    margin: 20px;
+    width: 100% - 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.maisvendidos-card {
+    position: relative; /* Enable positioning for child elements */
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    overflow: hidden; /* Ensure content stays within the card */
+}
+
+.maisvendidos-card img {
+    width: 100%; /* Ensure the image takes up the full width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px;
+}
+
+.maisvendidos-title,
+.maisvendidos-details,
+.maisvendidos-buy-button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-align: center;
+    z-index: 2; /* Ensure text and button appear above the image */
+}
+
+.maisvendidos-title {
+    top: 10%; /* Position title near the top */
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.maisvendidos-details {
+    bottom: 20%; /* Position bullet points above the button */
+    list-style-type: disc;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+
+.maisvendidos-buy-button {
+    display: none;
+    bottom: 10%; /* Position button near the bottom */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1899d5;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.maisvendidos-buy-button:hover {
+    background-color: #258f25;
+}
+
+.maisvendidos-card:hover .maisvendidos-buy-button {
+    display: block; /* Show button on hover */
+}
+
+.maisvendidos-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0); /* Add a dark overlay for better text visibility */
+    z-index: 1; /* Ensure overlay is below text but above the image */
+    transition: background 0.3s ease; /* Add transition for background property */
+}
+
+.maisvendidos-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.maisvendidos-card:hover::before {
+    background: rgba(0, 0, 0, 0.5); /* Add a dark overlay for better text visibility */
+}
+
+.maisvendidos-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.maisvendidos-details {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.maisvendidos-buy-button {
+    display: none;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1899d5;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px auto;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.maisvendidos-buy-button:hover {
+    background-color: #258f25;
+}
+
+.maisvendidos-card:hover .maisvendidos-buy-button {
+    display: block;
 }
