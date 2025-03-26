@@ -71,3 +71,4 @@ const adCarrossel = {
 
 startCarrossel(adCarrossel);
 setupButtonGroup(btnGroupSuplementos);
+setupButtonGroup(btnGroupModa);
