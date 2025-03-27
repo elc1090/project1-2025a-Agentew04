@@ -389,6 +389,9 @@ body {
     height: 200px;
     overflow: hidden;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
     font-weight: bold;
     text-transform: uppercase;
@@ -415,6 +418,7 @@ body {
     z-index: 2;
     margin: 0;
     font-size: 16px;
+    text-align: center;
 }
 
 .menu-button:hover img {
@@ -424,4 +428,124 @@ body {
 
 .menu-button:hover {
     background: rgba(0, 0, 0, 0.5);
+}
+
+.grid-3-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.grid-3-item-1 {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.grid-3-item-1 ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    
+}
+
+.grid-3-item-1 ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.grid-3-item-1 ul li a:hover {
+    color: #1899d5;
+}
+
+.grid-3-item-2 {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.grid-3-item-3 {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.grid-3-item-3 div img {
+    height: 75px;
+}
+
+.banner-cnpj {
+    background-color: #1899d5;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.developer-ad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.developer-ad img {
+    height: 25px;
+    margin: 20px;
+}
+
+.grid-5-columns {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: 20px;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-5-item-1,
+.grid-5-item-2,
+.grid-5-item-3,
+.grid-5-item-4,
+.grid-5-item-5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.grid-5-item-1 ul,
+.grid-5-item-2 ul,
+.grid-5-item-3 ul,
+.grid-5-item-4 ul,
+.grid-5-item-5 ul {
+    list-style-type: none;
+}
+
+.grid-5-item-1 ul li a,
+.grid-5-item-2 ul li a,
+.grid-5-item-3 ul li a,
+.grid-5-item-4 ul li a,
+.grid-5-item-5 ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.grid-5-item-1 ul li a:hover,
+.grid-5-item-2 ul li a:hover,
+.grid-5-item-3 ul li a:hover,
+.grid-5-item-4 ul li a:hover,
+.grid-5-item-5 ul li a:hover {
+    color: #1899d5;
+}
+
+.forma-pagamento {
+    
 }
