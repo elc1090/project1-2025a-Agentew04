@@ -2,49 +2,52 @@
 <html>
 <head>
     <title>Grouf</title>
-    <link href="index.css" type="text/css" rel="stylesheet">
+    <link href="styles/index.css" type="text/css" rel="stylesheet">
+    <link href="styles/colors.css" type="text/css" rel="stylesheet">
+    <link href="styles/align.css" type="text/css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- faixa de propaganda -->
-    <div class="center" style="background-color: dodgerblue;">FRETE GRATIS ACIMA DE R$300,00</div>
+    <div class="halign-center foreground-white background-darkblue padding-15">FRETE GRATIS ACIMA DE R$300,00</div>
 
     <!-- header -->
-    <div class="horizontalpai" style="background-color: cornflowerblue">
+    <div class="background-blue content-horizontal grid grid-header">
         <!-- logo -->
-        
-        <div class="horizontalfilho">
-            Growth<br/>Suplementos
-        </div>
+        <img src="img/logo.svg" class="grid-item-1 padding-15"></img>
 
         <!-- barra de pesquisa -->
-        <p class="horizontalfilho">Encontre o suplemento ideal para você</p>
+        <div class="grid-item-2 flex">
+            <div class="search-bar">
+                <p>Encontre o suplemento ideal para você</p>
+            </div>
+        </div>
 
         <!-- botao login -->
-        <button class="botaotitlebar">
+        <button class="botaotitlebar grid-item-3">
             <b>Cadastre-se</b> ou <b>faça seu login</b>
         </button>
 
         <!-- botao favoritos -->
-        <button class="botaotitlebar">
+        <button class="botaotitlebar grid-item-4">
             <b>Favoritos</b>
         </button>
 
         <!-- botao fale conosco -->
-        <button class="botaotitlebar">
+        <button class="botaotitlebar grid-item-5">
             <b>Fale Conosco aqui</b>
         </button>
 
         <!-- carrinho -->
-        <button class="botaotitlebar">
+        <button class="botaotitlebar grid-item-6">
             CARRINHO
         </button>
     </div>
 
     <!-- navbar -->
-    <div class="horizontalpai">
+    <div class="horizontalpai navbar-fake">
         <div class="horizontalfilho">CATEGORIAS</div>
         <div class="horizontalfilho">TOP20</div>
         <div class="horizontalfilho">LANCAMENTOS</div>
@@ -59,61 +62,238 @@
     </div>
 
     <!-- propaganda carrosel-->
-    <img src="img/ad1.webp" class="full-width-image" id="carrosel1"></img>
+    <img src="img/ad1.webp" class="full-width-image" id="carrossel1"></img>
 
     <!-- opcoes bolas -->
     <div class="horizontalpai">
         <div class="horizontalfilho botaobola horizontalpai">
-            <div class="horizontalfilho botaohover">
-                <img></img>
+            <div class="botaohover background-blue">
+                <img src="img/truck.svg"></img>
             </div>
-            <div class="horizontalfilho">
+            <div class="horizontalfilho" id="bolatext">
                 <b>Frete Grátis a partir<br>
                 de R$150*</b><br>
-                <u>Consulte condições</u>
             </div>
         </div>
         <div class="horizontalfilho botaobola horizontalpai">
-            <div class="horizontalfilho botaohover">
-                <img></img>
+            <div class="botaohover background-blue">
+                <img src="img/barcode.svg"></img>
             </div>
-            <div class="horizontalfilho">
+            <div class="horizontalfilho" id="bolatext">
                 <b>Compre em nossa<br>
                 loja com 10% OFF<br>
                 no boleto ou PIX</b>
             </div>
         </div>
         <div class="horizontalfilho botaobola horizontalpai">
-            <div class="horizontalfilho botaohover">
-                <img></img>
+            <div class="botaohover background-blue">
+                <img src="img/cashback.svg"></img>
             </div>
-            <div class="horizontalfilho vertical-center">
+            <div class="horizontalfilho" id="bolatext">
                 <b>CASHBACK<br>
-                GPONTOS</b><br>
-                <u>Consulte condições</u>
+                GPONTOS</b>
             </div>
         </div>
         <div class="horizontalfilho botaobola horizontalpai">
-            <div class="horizontalfilho botaohover">
-                <img></img>
+            <div class="botaohover background-blue">
+                <img src="img/msg.svg"></img>
             </div>
-            <div class="horizontalfilho">
+            <div class="horizontalfilho" id="bolatext">
                 <b>Nutricionista<br>
                 Esportivo</b><br>
-                <u>Clique aqui</u>
             </div>
         </div>
         <div class="horizontalfilho botaobola horizontalpai">
-            <div class="horizontalfilho botaohover">
-                <img></img>
+            <div class="botaohover background-blue">
+                <img src="img/card.svg"></img>
             </div>
-            <div class="horizontalfilho">
+            <div class="horizontalfilho" id="bolatext">
                 <b>Compras em até 6x<br>
                 sem juros</b>
             </div>
         </div>
     </div>
 
+    <!-- 2 ads lado a lado -->
+    <div class="horizontalpai">
+        <img src="img/ad10.webp" class="horizontalfilho ad-two">
+        <img src="img/ad11.webp" class="horizontalfilho ad-two">
+    </div>
+
+    <!-- title suplementos -->
+    <h2 class="title-suplementos">CONHEÇA OS SUPLEMENTOS QUE TRANSFORMARÃO SEUS RESULTADOS</h2>
+
+    <!-- botoes suplementos -->
+    <div class="button-group">
+        <button class="category-button active" id="btn-supl-massa">MASSA MUSCULAR</button>
+        <button class="category-button" id="btn-supl-magro">EMAGRECIMENTO</button>
+        <button class="category-button" id="btn-supl-energia">ENERGIA</button>
+        <button class="category-button" id="btn-supl-saude">SAÚDE E QUALIDADE DE VIDA</button>
+    </div>
+    
+    <!-- conteudo do suplementos -->
+    <div class="horizontalpai suplementos-container">
+        <!-- ad -->
+        <div class="horizontalfilho product-card-ad">
+            <img src="img/supl-massa.jpg" alt="Banner" class="suplementos-banner" id="suplementos-ad">
+        </div>
+
+        <!-- produtos. atualizados com js -->
+        <div class="horizontalfilho product-card" id="product-card-1">
+            <img src="img/placeholder.webp" alt="Product Image" id="supl-prod1-img">
+            <h3 id="supl-prod1-title">Product Title</h3>
+            <p class="price" id="supl-prod1-price">$0.00</p>
+            <button class="background-green">COMPRAR</button>
+        </div>
+        <div class="horizontalfilho product-card" id="product-card-2">
+            <img src="img/placeholder.webp" alt="Product Image" id="supl-prod2-img">
+            <h3 id="supl-prod2-title">Product Title</h3>
+            <p class="price" id="supl-prod2-price">$0.00</p>
+            <button class="background-green">COMPRAR</button>
+        </div>
+        <div class="horizontalfilho product-card" id="product-card-3">
+            <img src="img/placeholder.webp" alt="Product Image" id="supl-prod3-img">
+            <h3 id="supl-prod3-title">Product Title</h3>
+            <p class="price" id="supl-prod3-price">$0.00</p>
+            <button class="background-green">COMPRAR</button>
+        </div>
+    </div>
+
+    <!-- mais vendidos title -->
+    <h2 class="title-suplementos">OS 20 MAIS VENDIDOS</h2>
+
+    <!-- mais vendidos -->
+    <div class="maisvendidos-pai">
+        <div class="maisvendidos-card">
+            <img src="https://www.gsuplementos.com.br/upload/banner/ae1afd8e88fc56a0bc5f425ca9cb9ee8.webp"></img>
+            <h3 class="maisvendidos-title foreground-white">Produto 1</h3>
+            <ul class="maisvendidos-details foreground-white">
+                <li>AJUDA NA HIPERTROFIA</li>
+                <li>MELHOR CUSTO X BENEFÍCIO</li>
+                <li>ALTA CONCENTRAÇÃO DE PROTEÍNA</li>
+            </ul>
+            <button class="maisvendidos-buy-button">COMPRAR</button>
+        </div>
+        <div class="maisvendidos-card">
+            <img src="https://www.gsuplementos.com.br/upload/banner/32cefff51ba5529182e2fe1e49888929.webp"></img>
+            <h3 class="maisvendidos-title foreground-white">Produto 2</h3>
+            <ul class="maisvendidos-details foreground-white">
+                <li>ENERGIA AO MÚSCULO</li>
+                <li>RETARDA CANSAÇO MUSCULAR</li>
+                <li>RECUPERAÇÃO DOS MÚSCULOS</li>
+            </ul>
+            <button class="maisvendidos-buy-button">COMPRAR</button>
+        </div>
+        <div class="maisvendidos-card">
+            <img src="https://www.gsuplementos.com.br/upload/banner/407dd8941147da8291bdfba12f6e1020.webp"></img>
+            <h3 class="maisvendidos-title foreground-white">Produto 3</h3>
+            <ul class="maisvendidos-details foreground-white">
+                <li>COMPLEMENTO DIÁRIO</li>
+                <li>FITONUTRIENTES IMPORTANTES</li>
+                <li>AUXILIA O SISTEMA IMUNE</li>
+            </ul>
+            <button class="maisvendidos-buy-button">COMPRAR</button>
+        </div>
+        <div class="maisvendidos-card">
+            <img src="https://www.gsuplementos.com.br/upload/banner/c660d665a8a5e5dd15ef6a782cc90a3d.webp"></img>
+            <h3 class="maisvendidos-title foreground-white">Produto 4</h3>
+            <ul class="maisvendidos-details foreground-white">
+                <li>MAIS DISPOSIÇÃO</li>
+                <li>FORÇA</li>
+                <li>RESISTÊNCIA</li>
+            </ul>
+            <button class="maisvendidos-buy-button">COMPRAR</button>
+        </div>
+    </div>
+
+
+    <!-- moda title -->
+    <h2 class="title-suplementos">MODA E ACESSÓRIOS</h2>
+
+    <!-- botoes moda -->
+    <div class="button-group">
+        <button class="category-button active" id="btn-moda-fem">FEMININO</button>
+        <button class="category-button" id="btn-moda-masc">MASCULINO</button>
+        <button class="category-button" id="btn-moda-uni">UNISSEX</button>
+    </div>
+    
+    <!-- conteudo do moda -->
+    <div class="horizontalpai suplementos-container">
+        <!-- ad -->
+        <div class="horizontalfilho product-card-ad">
+            <img alt="Banner" class="suplementos-banner" id="moda-ad">
+        </div>
+
+        <!-- produtos. atualizados com js -->
+        <div class="horizontalfilho product-card" id="product-card-1">
+            <img alt="Product Image" id="moda-prod1-img">
+            <h3 id="moda-prod1-title">Product Title</h3>
+            <p class="price" id="moda-prod1-price">$0.00</p>
+            <button class="background-green">COMPRAR</button>
+        </div>
+        <div class="horizontalfilho product-card" id="product-card-2">
+            <img alt="Product Image" id="moda-prod2-img">
+            <h3 id="moda-prod2-title">Product Title</h3>
+            <p class="price" id="moda-prod2-price">$0.00</p>
+            <button class="background-green">COMPRAR</button>
+        </div>
+        <div class="horizontalfilho product-card" id="product-card-3">
+            <img alt="Product Image" id="moda-prod3-img">
+            <h3 id="moda-prod3-title">Product Title</h3>
+            <p class="price" id="moda-prod3-price">$0.00</p>
+            <button class="background-green">COMPRAR</button>
+        </div>
+    </div>
+
+    <!-- diamante title -->
+    <h2 class="title-suplementos">SUPLEMENTOS É GROWTH SUPPLEMENTS</h2>
+
+    <!-- diamante image -->
+    <div class="image-stack full-width-image">
+        <img class="full-width-image" src="https://www.gsuplementos.com.br/upload/banner/192bd968240430198c8049b35c6335fd.webp"></img>
+        <img class="full-width-image" src="https://www.gsuplementos.com.br/upload/banner/d1874796af699fc7a1af041de9dc8594.webp"></img>
+    </div>
+
+    <!-- categoria title -->
+    <h2 class="title-suplementos">ESCOLHA SEU SUPLEMENTO POR CATEGORIA</h2>
+
+    <!-- menu 8 buttons -->
+    <div class="menu-8-buttons">
+        <div class="menu-button">
+            <img src="img/proteinas.svg" alt="Proteínas">
+            <p>PROTEÍNAS</p>
+        </div>
+        <div class="menu-button">
+            <img src="img/veganos.svg" alt="Veganos">
+            <p>VEGANOS</p>
+        </div>
+        <div class="menu-button">
+            <img src="img/vegetarianos.svg" alt="Vegetarianos">
+            <p>VEGETARIANOS</p>
+        </div>
+        <div class="menu-button">
+            <img src="img/termogenicos.svg" alt="Termogênicos">
+            <p>TERMOGÊNICOS</p>
+        </div>
+        <div class="menu-button">
+            <img src="img/vitaminas.svg" alt="Vitaminas">
+            <p>VITAMINAS</p>
+        </div>
+        <div class="menu-button">
+            <img src="img/linha-clinica.svg" alt="Linha Clínica">
+            <p>LINHA CLÍNICA</p>
+        </div>
+        <div class="menu-button">
+            <img src="img/aminoacidos.svg" alt="Aminoácidos">
+            <p>AMINOÁCIDOS</p>
+        </div>
+        <div class="menu-button">
+            <img src="img/carboidratos.svg" alt="Carboidratos">
+            <p>CARBOIDRATOS</p>
+        </div>
+    </div>
+
+    <script src="products.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
