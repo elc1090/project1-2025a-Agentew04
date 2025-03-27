@@ -11,10 +11,10 @@ const btnGroupSuplementos = {
             id: "suplementos-ad",
             type: "img",
             value: {
-                "btn-supl-massa": "img/supl-massa.jpg",
-                "btn-supl-magro": "img/supl-magro.jpg",
-                "btn-supl-energia": "img/supl-energia.jpg",
-                "btn-supl-saude": "img/supl-saude.jpg"
+                "btn-supl-massa": "https://www.gsuplementos.com.br/upload/menu/objetivos-tabs/9c19096b622442cd28252ed702581a3b.jpg",
+                "btn-supl-magro": "https://www.gsuplementos.com.br/upload/menu/objetivos-tabs/9f9b1baba711fa57802181396b968b5e.jpg",
+                "btn-supl-energia": "https://www.gsuplementos.com.br/upload/menu/objetivos-tabs/1ce3c7cd0f540daaa325235b5d8c4cc9.jpg",
+                "btn-supl-saude": "https://www.gsuplementos.com.br/upload/menu/objetivos-tabs/d3c759f30f6fde0b0e0217fd80307019.jpg"
             }
         },
         {
@@ -88,10 +88,10 @@ const btnGroupSuplementos = {
             id: "supl-prod1-img",
             type: "img",
             value: {
-                "btn-supl-massa": "img/supl-massa1.webp",
-                "btn-supl-magro": "img/supl-magro1.webp",
-                "btn-supl-energia": "img/supl-energia1.webp",
-                "btn-supl-saude": "img/supl-saude1.webp"
+                "btn-supl-massa": "https://www.gsuplementos.com.br/upload/produto/imagem/m_top-whey-protein-concentrado-1kg-growth-supplements-19.webp",
+                "btn-supl-magro": "https://www.gsuplementos.com.br/upload/produto/imagem/m_xilitol-250gr-growth-supplements.webp",
+                "btn-supl-energia": "https://www.gsuplementos.com.br/upload/produto/imagem/m_pr-treino-insanity-300g-growth-supplements-4.webp",
+                "btn-supl-saude": "https://www.gsuplementos.com.br/upload/produto/imagem/m_melatonina-0-21mg-200-comprimidos-growth-supplements.png"
             }
         },
         {
@@ -99,10 +99,10 @@ const btnGroupSuplementos = {
             id: "supl-prod2-img",
             type: "img",
             value: {
-                "btn-supl-massa": "img/supl-massa2.webp",
-                "btn-supl-magro": "img/supl-magro2.webp",
-                "btn-supl-energia": "img/supl-energia2.webp",
-                "btn-supl-saude": "img/supl-saude2.webp"
+                "btn-supl-massa": "https://www.gsuplementos.com.br/upload/produto/imagem/m_dose-whey-protein-concentrado-30gr-growth-supplements-6.webp",
+                "btn-supl-magro": "https://www.gsuplementos.com.br/upload/produto/imagem/m_hot-termog-nico-60-comprimidos-growth-supplements.webp",
+                "btn-supl-energia": "https://www.gsuplementos.com.br/upload/produto/imagem/m_pr-treino-haze-hardcore-300g-growth-supplements-6.webp",
+                "btn-supl-saude": "https://www.gsuplementos.com.br/upload/produto/imagem/m_zma-120-caps-growth-supplements.webp"
             }
         },
         {
@@ -110,10 +110,10 @@ const btnGroupSuplementos = {
             id: "supl-prod3-img",
             type: "img",
             value: {
-                "btn-supl-massa": "img/supl-massa3.webp",
-                "btn-supl-magro": "img/supl-magro3.webp",
-                "btn-supl-energia": "img/supl-energia3.webp",
-                "btn-supl-saude": "img/supl-saude3.webp"
+                "btn-supl-massa": "https://www.gsuplementos.com.br/upload/produto/imagem/m_creatina-250g-creapure-growth-supplements.webp",
+                "btn-supl-magro": "https://www.gsuplementos.com.br/upload/produto/imagem/m_cafe-na-200mg-120-caps-growth-supplements-termog-nico.webp",
+                "btn-supl-energia": "https://www.gsuplementos.com.br/upload/produto/imagem/m_pasta-de-amendoim-integral-torrado-1kg-growth-supplements.webp",
+                "btn-supl-saude": "https://www.gsuplementos.com.br/upload/produto/imagem/m_multivitam-nico-120-c-ps-nova-f-rmula-growth-supplements.webp"
             }
         }
     ],
